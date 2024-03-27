@@ -4,7 +4,7 @@ node {
         checkout scm
     }
     stage('Build image') {
-       app = docker.build("filipsam789/DevOps-Course-Jenkins")
+       app = docker.build("filipsam789/devops-course-jenkins2")
     }
     stage('Push image') {   
         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
